@@ -7,7 +7,7 @@ import Experience from'../components/experience/Experience'
 import Footer from'../components/footer/Footer'
 import Portfolio from'../components/portfolio/Portfolio'
 import Services from'../components/services/Services'
-
+import Project  from '../components/Projects/Project'
 
 const Home = () => {
   return (
@@ -25,11 +25,13 @@ const Home = () => {
    
     <Services/>
     
-    <Portfolio/>
+
+    <Project/>
 
     <Contact/>
+
   
-    <Footer/>
+
   
     
     </div>
