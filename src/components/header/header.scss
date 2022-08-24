@@ -1,0 +1,104 @@
+.header_container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+    margin-top: 4rem;
+}
+
+/* DOWNLOAD CV */
+
+.callToAction {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/* Socials */
+.header_socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+
+}
+
+.header_socials::after {
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+img {
+    max-width: 400px;
+    max-width: 400px;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    justify-content: center;
+}
+
+.arrow_down {
+    font-size: 30px;
+    transform: rotate(270deg);
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    from {
+        transform:
+            translateY(-10px);
+    }
+
+    to {
+        transform: translateY(10px);
+
+    }
+
+
+}
+
+
+
+
+/* 
+.me {
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    overflow: hidden;
+    left: calc(50%-11rem);
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+    justify-content: center;
+    margin-top: 4rem;
+    text-align: center;
+
+} */
+.scroll_down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+
+
+@media screen and (max-width:1024px) {
+    header {
+        height: 68vh;
+    }
+}
+
+@media screen and (max-width:600px) {
+    header {
+        height: 100vh;
+    }
+
+    .header_socials,
+    .scroll_down {
+        display: none;
+    }
+}
